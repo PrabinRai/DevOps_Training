@@ -4,9 +4,9 @@ variable "instance_count" {
 }
 
 variable "ami_id" {
-    type= string
+   # type= string
     description = "ami used for web server instance "
-  default = ""
+  
 }
 
 variable "instance_type" {
