@@ -1,5 +1,5 @@
 resource "aws_security_group" "security_group" {
-  name        = var.name
+  #name        = var.name
   description = var.description
   vpc_id      = var.vpc_id
 
@@ -30,7 +30,7 @@ egress=[{
 }]
 
   tags = {
-    Name = "security group"
+  #  Name = "security_group"
   }
 }
 

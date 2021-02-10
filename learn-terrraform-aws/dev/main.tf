@@ -31,8 +31,8 @@ module "ec2" {
 
 module "sg" {
   source = "../modules/sec-grp"
-
-  name        = "security-grp"
+  security_group =module.sg.aws_security_group.security_group
+  #name        = "security-grp"
   description = "Traffic rules for http and ssh protocol"
   vpc_id      = module.my_vpc.output_vpc_id
   ingress     = module.sg.ingress

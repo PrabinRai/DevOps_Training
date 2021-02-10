@@ -11,9 +11,9 @@ variable "vpc_id" {
 }
 
 variable "ingress" {
-  
+  type= any 
 }
 
 variable "egress" {
-  
+  type = any
 }
