@@ -15,6 +15,6 @@ provider "aws" {
 
 module "calculatorweb" {
   source     = "../modules/s3-bucket"
-  bucketname = "Calculator-in-web"
+  bucketname = "calculator-in-web"
 
 }
